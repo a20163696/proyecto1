@@ -3,7 +3,9 @@ import pandas as pd
 import numpy as np
 import datetime
 
-st.title("Titulo")
+st.title("Proyecto 1: Aplicación de Streamlit")
+st.write("Esta es una aplicación de ejemplo para aprender a usar Streamlit.")
+
 num = st.slider("num", 0, 100, step=1)
 st.write("El numero ingresado es {}".format(num))
 
@@ -25,3 +27,4 @@ st.line_chart(chart_data)
 
 df = pd.DataFrame(np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4], columns=['lat', 'lon'])
 st.map(df)
+
